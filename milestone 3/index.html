@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-section">
+      <h1>Build Your Resume</h1>
+      <form id="resumeForm">
+        <label for="profileImage">Profile Image</label>
+        <input type="file" id="profileImage" accept="image/*">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="role">Role</label>
+        <input type="text" id="role" placeholder="Frontend Developer" required>
+
+        <label for="contact">Contact</label>
+        <input type="tel" id="contact" placeholder="Phone Number" required>
+        <input type="email" id="email" placeholder="Email" required>
+       
+
+        <label for="about">About Me</label>
+        <textarea id="about" placeholder="Write about yourself..."></textarea>
+
+        <label for="education">Education</label>
+        <textarea id="education" placeholder="Add your education details"></textarea>
+
+        <label for="experience">Experience</label>
+        <textarea id="experience" placeholder="Add your work experience"></textarea>
+
+        <label for="skills">Skills</label>
+        <textarea id="skills" placeholder="Add your skills (e.g., HTML, CSS, JavaScript)"></textarea>
+
+        <button type="button" id="generateBtn">Generate Resume</button>
+      </form>
+    </div>
+
+    <!-- Preview Section -->
+    <div class="preview-section">
+      <h1>Live Preview</h1>
+      <div id="resumePreview" class="resume">
+        <!-- Dynamic Resume -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

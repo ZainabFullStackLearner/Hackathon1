@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <header class="resume-header">
+      <h1 contenteditable="true" data-section="name">Your Name</h1>
+      <p contenteditable="true" data-section="role">Your Professional Role</p>
+    </header>
+    
+    <section class="resume-section about" id="about">
+      <h2>About Me</h2>
+      <div class="editable" contenteditable="true" data-section="about">
+        Add a brief description about yourself...
+      </div>
+    </section>
+
+    <section class="resume-section skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li contenteditable="true" data-section="skill1">Skill 1</li>
+        <li contenteditable="true" data-section="skill2">Skill 2</li>
+        <li contenteditable="true" data-section="skill3">Skill 3</li>
+      </ul>
+    </section>
+    <section class="resume-section contact" id="contact">
+        <h2>Contact Information</h2>
+        <p contenteditable="true" data-section="email" class="editable">Email: your-email@example.com</p>
+        <p contenteditable="true" data-section="phone" class="editable">Phone: 123-456-7890</p>
+        <p contenteditable="true" data-section="address" class="editable">Address: Your Address</p>
+      </section>
+  
+
+    <section class="resume-section education" id="education">
+      <h2>Education</h2>
+      <div class="editable" contenteditable="true" data-section="education">
+        Add your education details here...
+      </div>
+    </section>
+
+    <section class="resume-section work" id="work-experience">
+      <h2>Work Experience</h2>
+      <div class="editable" contenteditable="true" data-section="work-experience">
+        Add your work experience here...
+      </div>
+    </section>
+
+   
+    <footer class="resume-footer">
+      <p contenteditable="true" data-section="footer">
+        &copy; All rights and rerved by Zainab Ashraf
+      </p>
+    </footer>
+  </div>
+  <script src="script.ts"></script>
+</body>
+</html>
